@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+      <div class="left-side">
+        <img src="images/icon-menu.svg" alt="menu" class="menu-icon">
+        <img src="images/logo.svg" alt="logo">
+        <nav>
+          <ul>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right-side">
+        <div class="cart">
+          <img src="images/icon-cart.svg" alt="cart" class="icon">
+          <span class="badge hidden">0</span>
+        </div>
+        <img src="images/image-avatar.png" alt="avatar" class="avatar">
+      </div>
+    </header>
+
+    <main>
+
+      <div class="image-container">
+        <img src="images/image-product-1.jpg" alt="image" class="main-image">
+        <div class="next">
+          <img src="images/icon-next.svg" alt="next">
+        </div>
+        <div class="prev">
+          <img src="images/icon-previous.svg" alt="previous">
+        </div>
+        <div class="thumbnails">
+          <img src="images/image-product-1.jpg" alt="image" class="thumbnail active">
+          <img src="images/image-product-2.jpg" alt="image" class="thumbnail">
+          <img src="images/image-product-3.jpg" alt="image" class="thumbnail">
+          <img src="images/image-product-4.jpg" alt="image" class="thumbnail">
+        </div>
+      </div>
+
+      <div class="text-container">
+        <p class="company">Sneaker Company</p>
+        <h1 class="title">Fall Limited Edition Sneakers</h1>
+        <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable
+          rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+        <div class="price-container">
+          <div class="new-price">
+            <span class="price"><span class="currency">$</span><span class="amount">125.00</span></span>
+            <span class="discount">50%</span>
+          </div>
+          <span class="old-price"><del>$250.00</del></span>
+        </div>
+
+        <div class="price-buttons">
+          <div class="counter-container">
+            <img src="images/icon-minus.svg" alt="minus" class="minus">
+            <span class="counter">0</span>
+            <img src="images/icon-plus.svg" alt="plus" class="plus">
+          </div>
+
+          <button class="add-to-cart">
+            <img src="images/icon-cart.svg" alt="cart" class="btn-cart">
+            Add to cart
+          </button>
+        </div>
+      </div>
+
+    </main>
+
+    <div class="cart-modal">
+      <div class="cart-header">
+        Cart
+      </div>
+      <div class="cart-body empty">
+        Your cart is empty.
+      </div>
+      <button class="checkout">checkout</button>
+    </div>
+  </div>
+
+  <div class="lightbox">
+    <img src="images/icon-close.svg" alt="close" class="close">
+    <img src="images/image-product-1.jpg" alt="image" class="lightbox-image">
+    <div class="next">
+      <img src="images/icon-next.svg" alt="next">
+    </div>
+    <div class="prev">
+      <img src="images/icon-previous.svg" alt="previous">
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Fatih ŞAHİNBAŞ</a>.
+  </div>
+  <div class="mobile-menu">
+    <img src="images/icon-close.svg" alt="close" class="close">
+    <ul>
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
