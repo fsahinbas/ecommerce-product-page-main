@@ -23,6 +23,18 @@ header {
   border-bottom: 1px solid hsl(220, 14%, 75%);
 }
 
+.mobile-menu {
+  width: calc(60%);
+  height: 100vh;
+  position: absolute;
+  left: -60%;
+  top: 0;
+  background-color: #fff;
+  padding: 1rem;
+  transition: left 0.3s ease-in-out;
+  display: none;
+}
+
 .menu-icon {
   display: none;
 }
@@ -487,18 +499,8 @@ main {
     right: 15px;
   }
 
-  .mobile-menu {
-    width: calc(60%);
-    height: 100vh;
-    position: absolute;
-    left: -60%;
-    top: 0;
-    background-color: #fff;
-    padding: 1rem;
-    transition: left 0.3s ease-in-out;
-  }
-
   .mobile-menu.open {
+    display: block;
     left: 0;
   }
 
